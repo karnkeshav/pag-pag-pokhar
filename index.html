@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="mai">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>पग-पग पोखरि, पान-मखान | मिथिलाक सांस्कृतिक धरोहर</title>
+  <!-- Google Fonts: Inter & Sora for headings -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Ready4Launch runtime monitor -->
+  <script>
+    window.onerror = function(msg, src, line, col, err) {
+      try {
+        fetch('https://your-actual-render-url.onrender.com/api/telemetry/report', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            appPath: window.location.pathname,
+            errorMsg: msg,
+            source: src,
+            line: line,
+            stackTrace: err ? err.stack : ''
+          })
+        });
+      } catch (_) {}
+      return true; // suppress visual error overlay
+    };
+  </script>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-icon">🪷</span> मिथिला<b>धरोहर</b>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">गृह</a>
+        <a href="#pokhari">पोखरि</a>
+        <a href="#paan-makhan">पान-मखान</a>
+        <a href="#art">मिथिला कला</a>
+        <a href="#haat">मिथिला हाट</a>
+        <a href="#chaupal">चौपाल</a>
+      </nav>
+      <button class="btn btn-sm btn-nav" onclick="scrollToSection('haat')">
+        <i class="fa-solid fa-bag-shopping"></i> आर्डर करू
+      </button>
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Menu -->
+  <div class="mobile-nav">
+    <a href="#home" onclick="toggleMobileMenu()">गृह</a>
+    <a href="#pokhari" onclick="toggleMobileMenu()">पोखरि</a>
+    <a href="#paan-makhan" onclick="toggleMobileMenu()">पान-मखान</a>
+    <a href="#art" onclick="toggleMobileMenu()">मिथिला कला</a>
+    <a href="#haat" onclick="toggleMobileMenu()">मिथिला हाट</a>
+    <a href="#chaupal" onclick="toggleMobileMenu()">चौपाल</a>
+    <button class="btn" onclick="scrollToSection('haat'); toggleMobileMenu();">
+      <i class="fa-solid fa-bag-shopping"></i> आर्डर करू
+    </button>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    
+    <div class="container hero-content">
+      <div class="badge animate" style="animation-delay: 0.1s;">
+        <span class="badge-dot"></span> एहि थिक मिथिलाक जान
+      </div>
+      <h1 class="headline animate" style="animation-delay: 0.2s;">
+        पग-पग पोखरि,<br><span class="highlight">पान-मखान</span>
+      </h1>
+      <p class="hero-tagline animate" style="animation-delay: 0.3s;">
+        सरस बोलि, मुसकी मुखान! मिथिलाक पावन माटि, अद्भूत जल-संस्कृति, आ विश्वप्रसिद्ध मखानक सुगन्धित यात्राक डिजिटल अनुभव करू।
+      </p>
+      <div class="hero-actions animate" style="animation-delay: 0.4s;">
+        <button class="btn" onclick="scrollToSection('haat')">
+          <i class="fa-solid fa-store"></i> हाट घूमु
+        </button>
+        <button class="btn btn-ghost" onclick="scrollToSection('pokhari')">
+          अधिक जानू <i class="fa-solid fa-arrow-down"></i>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Pokhari (Ponds) -->
+  <section id="pokhari" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">जल जीवन हरियाली</span>
+        <h2 class="section-title">पग-पग पोखरि: मिथिलाक जल-संस्कृति</h2>
+        <p class="section-desc">मिथिलाक पोखरि केवल जलक स्रोत नहि, बल्कि हमर संस्कृति, जीवन पद्धति आ पारिस्थितिकी तंत्रक प्राण थिक।</p>
+      </div>
+
+      <div class="grid-2">
+        <div class="card val-card animate">
+          <div class="card-img-wrapper">
+            <img data-entity="Darbhanga" data-query="ancient sacred pond in darbhanga bihar india reflection of temple" alt="मिथिलाक ऐतिहासिक पोखरि" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text='+encodeURIComponent(this.alt||'Image');}else{this.onerror=null;}">
+          </div>
+          <div class="card-content">
+            <span class="card-badge"><i class="fa-solid fa-water"></i> जल संचय</span>
+            <h3>ऐतिहासिक पोखरि आ परंपरा</h3>
+            <p>गंगा सागर, दीघी, आ हरही सन ऐतिहासिक पोखरि मिथिलाक राजा लोकनि द्वारा बनाओल गेल छल। ई पोखरि जल स्तर केँ संतुलित रखबाक संग-संग अनेक पावनि-तिहारक साक्षी थिक।</p>
+          </div>
+        </div>
+
+        <div class="card val-card animate" style="animation-delay: 0.2s;">
+          <div class="card-img-wrapper">
+            <img data-query="indian village pond with lotus flowers and green leaves" alt="कमल आ मखानक खेती" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text='+encodeURIComponent(this.alt||'Image');}else{this.onerror=null;}">
+          </div>
+          <div class="card-content">
+            <span class="card-badge"><i class="fa-solid fa-seedling"></i> आजीविका</span>
+            <h3>मखान आ सिंघारक कृषि</h3>
+            <p>ई पोखरि केवल जल संचय नहि करैत अछि, बल्कि मखान, सिंघार आ उत्तम प्रजातिक माछक पालन क' क' लाखो परिवारक आजीविकाक मुख्य आधार थिक।</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Paan-Makhan -->
+  <section id="paan-makhan" class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">स्वाद आ सत्कार</span>
+        <h2 class="section-title">पान आ मखान: विशिष्ट पहिचान</h2>
+        <p class="section-desc">Mithila Makhana केँ भेटल अछि भौगोलिक संकेत (GI Tag), जे एकरा विश्व पटल पर विशिष्ट स्थान दैत अछि।</p>
+      </div>
+
+      <div class="grid-3">
+        <!-- Card 1: Makhana -->
+        <div class="card animate">
+          <div class="icon-box"><i class="fa-solid fa-circle-dot"></i></div>
+          <h3>मिथिला मखान (GI Tag)</h3>
+          <p>सुपरफूड मखान, जे अपन उच्च प्रोटीन, एंटी-ऑक्सीडेंट आ औषधीय गुणक लेल जानल जाएत अछि। ई उपवास आ स्वास्थ्यक लेल सर्वोत्तम अछि।</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check text-accent"></i> 100% प्राकृतिक आ जैविक</li>
+            <li><i class="fa-solid fa-check text-accent"></i> हृदय स्वास्थ्य लेल उत्तम</li>
+          </ul>
+        </div>
+
+        <!-- Card 2: Paan -->
+        <div class="card animate" style="animation-delay: 0.15s;">
+          <div class="icon-box"><i class="fa-solid fa-leaf"></i></div>
+          <h3>मिथिलाक मीठ पान</h3>
+          <p>अपन कोमलता आ सुगंधक लेल प्रसिद्ध। मिथिलाक पाहुन सत्कार पानक बिना अपूर्ण मानल जाएत अछि। ई पाचन लेल सेहो गुणी अछि।</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check text-accent"></i> मगही आ कपरपूरी पत्ता</li>
+            <li><i class="fa-solid fa-check text-accent"></i> पारंपरिक सत्कारक प्रतीक</li>
+          </ul>
+        </div>
+
+        <!-- Card 3: Machh -->
+        <div class="card animate" style="animation-delay: 0.3s;">
+          <div class="icon-box"><i class="fa-solid fa-fish"></i></div>
+          <h3>पोखरिक ताजा माछ</h3>
+          <p>मिथिलाक पोखरिक रेहू आ कतला माछ अपन अद्वितीय मीठ स्वादक लेल जानल जाएत अछि। ई हमर मांगलिक उत्सव क' मुख्य अंग अछि।</p>
+          <ul class="feature-list">
+            <li><i class="fa-solid fa-check text-accent"></i> पोखरि सँ सीधे ताजा</li>
+            <li><i class="fa-solid fa-check text-accent"></i> पारंपरिक सरसों मसालाक स्वाद</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Mithila Art -->
+  <section id="art" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">वैश्विक धरोहर</span>
+        <h2 class="section-title">मधुबनी पेंटिंग: अंगुरीक जादू</h2>
+        <p class="section-desc">हाथ सँ बनाओल प्राकृतिक रंग आ बाँसक कूँची सँ उकरल गेल लोक-कला, जे संपूर्ण विश्व केँ चकित केने अछि।</p>
+      </div>
+
+      <div class="art-showcase grid-2">
+        <div class="art-info">
+          <h3>प्राकृतिक रंग आ पौराणिक कथा</h3>
+          <p>मिथिला चित्रकला (मधुबनी पेंटिंग) मे रामायणक प्रसंग, प्रकृति, सूर्य-चन्द्र आ लोक जीवनक सजीव चित्रण कयल जाएत अछि। अहाँ एहि चित्रकला केँ अपन घरक शोभा बना सकैत छी।</p>
+          
+          <div class="stat-grid">
+            <div class="stat-item">
+              <span class="stat-num">GI</span>
+              <span class="stat-lbl">रजिस्टर टैग</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">100%</span>
+              <span class="stat-lbl">हस्तनिर्मित</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-num">10+</span>
+              <span class="stat-lbl">राष्ट्रीय पुरस्कार विजेता कलाकार</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card art-card">
+          <div class="art-img-container">
+            <img data-entity="Madhubani art" data-query="madhubani painting traditional mithila art depicting peacock and fish" alt="पारंपरिक मधुबनी पेंटिंग" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text='+encodeURIComponent(this.alt||'Image');}else{this.onerror=null;}">
+          </div>
+          <div class="art-caption">
+            <strong>"कोहबर आ मयूर"</strong>
+            <span>राष्ट्रीय पुरस्कार प्राप्त कलाकार द्वारा हस्तनिर्मित</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Mithila Haat (Marketplace & Calculator) -->
+  <section id="haat" class="section-padding bg-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">मिथिलाक उत्पाद</span>
+        <h2 class="section-title">मिथिला हाट: सीधे अहाँक घर धरि</h2>
+        <p class="section-desc">शुद्ध, प्रामाणिक आ उत्तम श्रेणीक मखान, पान आ पेंटिंग्स मंगाउ। अपन मनपसंद सामान चुनू आ तुरंत आर्डर वैल्यू देखू।</p>
+      </div>
+
+      <div class="haat-layout">
+        <!-- Products Grid -->
+        <div class="products-grid" id="products-container">
+          <!-- Dynamic products injected here -->
+        </div>
+
+        <!-- Order Summary & Checkout Card -->
+        <div class="card order-card">
+          <h3><i class="fa-solid fa-cart-shopping text-accent"></i> आर्डर सारांश</h3>
+          <hr class="divider">
+          
+          <div id="cart-items" class="cart-items-list">
+            <!-- Dynamic cart items -->
+            <p class="empty-cart-msg">कार्ट खाली अछि। उत्पादक संग "जोड़ू" बटन दबाउ।</p>
+          </div>
+
+          <hr class="divider">
+          
+          <div class="cart-totals">
+            <div class="total-row">
+              <span>उप-योग (Subtotal):</span>
+              <span id="subtotal-val">₹0</span>
+            </div>
+            <div class="total-row">
+              <span>जीएसटी (GST 18%):</span>
+              <span id="gst-val">₹0</span>
+            </div>
+            <div class="total-row main-total">
+              <span>कुल योग (Total):</span>
+              <span id="grand-total-val">₹0</span>
+            </div>
+          </div>
+
+          <!-- Checkout Form -->
+          <form id="checkout-form" class="checkout-form">
+            <div class="form-group">
+              <label for="cust-name">अहाँक नाम</label>
+              <input type="text" id="cust-name" placeholder="उदा. प्रिया शर्मा" required>
+            </div>
+            <div class="form-group">
+              <label for="cust-phone">मोबाइल नंबर</label>
+              <input type="tel" id="cust-phone" placeholder="उदा. +91 9876543210" pattern="[0-9+ ]{10,15}" required>
+            </div>
+            <div class="form-group">
+              <label for="cust-addr">वितरणक पता (Delivery Address)</label>
+              <textarea id="cust-addr" rows="2" placeholder="उदा. निजामपेट, हैदराबाद - 500090, तेलंगाना" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-block" id="btn-submit-order">
+              <i class="fa-solid fa-paper-plane"></i> आर्डर बुक करू
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Chaupal (Community Reviews & Feedback) -->
+  <section id="chaupal" class="section-padding">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">गप-शप</span>
+        <h2 class="section-title">मिथिला चौपाल</h2>
+        <p class="section-desc">मिथिलाक प्रेमी लोकनिक विचार, समीक्षा आ अपन अनुभव। अहाँ सेहो अपन विचार साझा करू!</p>
+      </div>
+
+      <div class="grid-2">
+        <!-- Review Form -->
+        <div class="card">
+          <h3><i class="fa-solid fa-pen-to-square text-accent"></i> अपन अनुभव लिखू</h3>
+          <p class="form-intro">अहाँक विचार हमरा लेल अमूल्य अछि। अपन समीक्षा वा संदेश साझा करू।</p>
+          
+          <form id="review-form" class="review-form">
+            <div class="form-group">
+              <label for="rev-name">अहाँक नाम</label>
+              <input type="text" id="rev-name" placeholder="उदा. राहुल मेहता" required>
+            </div>
+            <div class="form-group">
+              <label for="rev-location">स्थान (शहर)</label>
+              <input type="text" id="rev-location" placeholder="उदा. दरभंगा, बिहार" required>
+            </div>
+            <div class="form-group">
+              <label>रेटिंग (Rating)</label>
+              <div class="rating-stars" id="rating-input">
+                <i class="fa-star fa-solid" data-value="5"></i>
+                <i class="fa-star fa-solid" data-value="4"></i>
+                <i class="fa-star fa-solid" data-value="3"></i>
+                <i class="fa-star fa-solid" data-value="2"></i>
+                <i class="fa-star fa-solid" data-value="1"></i>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="rev-msg">अहाँक संदेश / समीक्षा</label>
+              <textarea id="rev-msg" rows="3" placeholder="मखानक गुणवत्ता बहुत नीक अछि..." required></textarea>
+            </div>
+            <button type="submit" class="btn"><i class="fa-solid fa-comment-dots"></i> चौपाल पर साझा करू</button>
+          </form>
+        </div>
+
+        <!-- Live Reviews Feed -->
+        <div class="reviews-feed-wrapper">
+          <h3><i class="fa-solid fa-comments text-accent"></i> हालक गप-शप</h3>
+          <div id="reviews-feed" class="reviews-feed">
+            <!-- Dynamic reviews loaded from localStorage -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-icon">🪷</span> मिथिला<b>धरोहर</b>
+          <p class="footer-about">हमर उद्देश्य मिथिलाक समृद्ध धरोहर, पोखरि संरक्षण, पान आ मखानक विशिष्टता केँ सम्पूर्ण विश्व धरि पहुँचाबय क' अछि।</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" aria-label="Youtube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>त्वरित संपर्क</h4>
+          <ul>
+            <li><a href="#home">गृह</a></li>
+            <li><a href="#pokhari">पोखरि</a></li>
+            <li><a href="#paan-makhan">पान-मखान</a></li>
+            <li><a href="#art">मिथिला कला</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>मुख्य कार्यालय</h4>
+          <p><i class="fa-solid fa-location-dot"></i> निजामपेट, हैदराबाद – 500090, तेलंगाना, भारत</p>
+          <p><i class="fa-solid fa-phone"></i> +91 40-2345-6789</p>
+          <p><i class="fa-solid fa-envelope"></i> hello@mithila-heritage.in</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 मिथिला धरोहर। सर्वाधिकार सुरक्षित। "पग-पग पोखरि, पान-मखान।"</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Notification Toast -->
+  <div id="toast" class="toast">
+    <span id="toast-icon"><i class="fa-solid fa-circle-check"></i></span>
+    <span id="toast-message">सफलतापूर्वक संपन्न भेल!</span>
+  </div>
+
+  <script src="js/app.js"></script>
+<script data-r4l-image-resolver>
+(()=>{
+  const cache = window.__r4lImgCache = window.__r4lImgCache || new Map();
+  const getSeed = (s) => {
+    let h = 5381;
+    const str = String(s || 'image');
+    for (let i = 0; i < str.length; i++) {
+      h = ((h << 5) + h) + str.charCodeAt(i);
+      h |= 0;
+    }
+    return Math.abs(h);
+  };
+  const fallback = (img) => {
+    if (!img || img.dataset.r4lFallback) return;
+    img.dataset.r4lFallback = '1';
+    img.dataset.r4lResolved = '1';
+    delete img.dataset.r4lResolving;
+    const label = /^[\x20-\x7E]*$/.test(img.alt || '') ? img.alt : 'Image';
+    const w = img.dataset.w || 600, h = img.dataset.h || 400;
+    img.src = 'https://placehold.co/' + w + 'x' + h + '/1e293b/ffffff?text=' + encodeURIComponent(label || 'Image');
+  };
+  const resolve = async (img) => {
+    if (!img || img.dataset.r4lResolving || img.dataset.r4lResolved) return;
+    const currentSrc = (img.getAttribute('src') || '').trim();
+    if (currentSrc && !currentSrc.startsWith('data:image/svg+xml;base64,PHN2Zy')) {
+      img.dataset.r4lResolved = '1';
+      return;
+    }
+    img.dataset.r4lResolving = '1';
+    const entity = img.dataset.entity;
+    const query = img.dataset.query || img.alt || 'professional product photo';
+    const w = img.dataset.w || 600, h = img.dataset.h || 400;
+    const cacheKey = (entity ? 'e:' + entity : 'q:' + query) + '@' + w + 'x' + h;
+
+    if (cache.has(cacheKey)) {
+      img.src = cache.get(cacheKey);
+      img.dataset.r4lResolved = '1';
+      delete img.dataset.r4lResolving;
+      return;
+    }
+
+    const seed = getSeed(entity || query);
+    const pollinationsFallback = 'https://image.pollinations.ai/prompt/' + encodeURIComponent(query) + '?width=' + w + '&height=' + h + '&seed=' + seed + '&nologo=true';
+
+    try {
+      if (entity) {
+        const r = await fetch('https://en.wikipedia.org/api/rest_v1/page/summary/' + encodeURIComponent(entity));
+        if (r.ok) {
+          const j = await r.json();
+          const src = (j.originalimage && j.originalimage.source) || (j.thumbnail && j.thumbnail.source);
+          if (src) {
+            cache.set(cacheKey, src);
+            img.src = src;
+            img.dataset.r4lResolved = '1';
+            delete img.dataset.r4lResolving;
+            return;
+          }
+        }
+      }
+      const r = await fetch('https://api.openverse.org/v1/images/?q=' + encodeURIComponent(query) + '&page_size=1&mature=false');
+      if (r.ok) {
+        const j = await r.json();
+        const hit = j.results && j.results[0];
+        const src = hit && (hit.url || hit.thumbnail);
+        if (src) {
+          cache.set(cacheKey, src);
+          img.src = src;
+          img.dataset.r4lResolved = '1';
+          delete img.dataset.r4lResolving;
+          return;
+        }
+      }
+      cache.set(cacheKey, pollinationsFallback);
+      img.src = pollinationsFallback;
+      img.dataset.r4lResolved = '1';
+      delete img.dataset.r4lResolving;
+    } catch (_) {
+      cache.set(cacheKey, pollinationsFallback);
+      img.src = pollinationsFallback;
+      img.dataset.r4lResolved = '1';
+      delete img.dataset.r4lResolving;
+    }
+  };
+
+  window.resolveImage = resolve;
+
+  const scan = (root = document) => {
+    if (!root || !root.querySelectorAll) return;
+    root.querySelectorAll('img[data-query],img[data-entity],img:not([src]),img[src=""]').forEach(resolve);
+  };
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', () => scan());
+  } else {
+    scan();
+  }
+
+  new MutationObserver(records => records.forEach(record => record.addedNodes.forEach(node => {
+    if (node.nodeType !== 1) return;
+    if (node.matches && node.matches('img')) resolve(node);
+    scan(node);
+  }))).observe(document.documentElement, { childList: true, subtree: true });
+
+  document.addEventListener('error', event => {
+    const img = event.target;
+    if (img && img.tagName === 'IMG' && (img.dataset.query || img.dataset.entity)) {
+      fallback(img);
+    }
+  }, true);
+})();
+</script></body>
+</html>
