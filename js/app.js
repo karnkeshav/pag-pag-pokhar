@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       desc: 'मिथिलाक पोखरि सँ सीधे तोरल गेल सर्वोत्तम गुणवत्ताक मखान। उपवास आ स्वास्थ्यक लेल उपयुक्त।',
       price: 299,
       unit: '500g पैकेट',
+      image: 'images/makhana.jpg',
       query: 'premium makhana fox nuts dry fruits raw in wooden bowl'
     },
     {
@@ -17,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
       desc: 'विशेष कपरपूरी पत्ता, मीठ मसाला, गुलकंद आ पारंपरिक इलायचीक स्वाद सँ युक्त पान।',
       price: 149,
       unit: '5 पीस पैक',
+      image: 'images/paan.jpg',
       query: 'traditional sweet banarasi paan betel leaf ready to eat'
     },
     {
@@ -152,11 +154,12 @@ document.addEventListener('DOMContentLoaded', () => {
     productsContainer.innerHTML = '';
     seedProducts.forEach(prod => {
       const qty = cart[prod.id] || 0;
+      const imgSrcAttr = prod.image ? `src="${prod.image}"` : '';
       const cardHtml = `
         <div class="card product-card">
           <div class="prod-img-wrapper">
             <span class="prod-price-tag">₹${prod.price}</span>
-            <img data-entity="${prod.entity || ''}" data-query="${prod.query}" alt="${prod.name}" loading="lazy"
+            <img ${imgSrcAttr} data-entity="${prod.entity || ''}" data-query="${prod.query || ''}" alt="${prod.name}" loading="lazy"
                  onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text='+encodeURIComponent(/^[\x20-\x7E]*$/.test(this.alt||'')?this.alt:'Image');}else{this.onerror=null;}">
           </div>
           <div class="prod-content">
