@@ -242,7 +242,70 @@
       <div class="haat-layout">
         <!-- Products Grid -->
         <div class="products-grid" id="products-container">
-          <!-- Dynamic products injected here -->
+          <div class="card product-card">
+            <div class="prod-img-wrapper">
+              <span class="prod-price-tag">₹299</span>
+              <img src="images/makhana.jpg" alt="शाही मिथिला मखान (Premium)" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text=Makhana';}else{this.onerror=null;}">
+            </div>
+            <div class="prod-content">
+              <h4>शाही मिथिला मखान (Premium)</h4>
+              <span class="card-badge" style="margin-bottom: 10px;">500g पैकेट</span>
+              <p class="prod-desc">मिथिलाक पोखरि सँ सीधे तोरल गेल सर्वोत्तम गुणवत्ताक मखान। उपवास आ स्वास्थ्यक लेल उपयुक्त।</p>
+              <div class="qty-control">
+                <button class="btn btn-block btn-sm" onclick="updateCart('p1', 1)">
+                  <i class="fa-solid fa-plus"></i> कार्ट मे जोड़ू
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card product-card">
+            <div class="prod-img-wrapper">
+              <span class="prod-price-tag">₹149</span>
+              <img src="images/paan.jpg" alt="मिथिला मीठ पान पैक" loading="lazy" style="width: 100%; height: 100%; object-fit: cover;" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text=Paan';}else{this.onerror=null;}">
+            </div>
+            <div class="prod-content">
+              <h4>मिथिला मीठ पान पैक</h4>
+              <span class="card-badge" style="margin-bottom: 10px;">5 पीस पैक</span>
+              <p class="prod-desc">विशेष कपरपूरी पत्ता, मीठ मसाला, गुलकंद आ पारंपरिक इलायचीक स्वाद सँ युक्त पान।</p>
+              <div class="qty-control">
+                <button class="btn btn-block btn-sm" onclick="updateCart('p2', 1)">
+                  <i class="fa-solid fa-plus"></i> कार्ट मे जोड़ू
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card product-card">
+            <div class="prod-img-wrapper">
+              <span class="prod-price-tag">₹1499</span>
+              <img data-entity="Madhubani art" data-query="madhubani art peacock handmade painting colorful" alt="मयूर मधुबनी पेंटिंग" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text=Image';}else{this.onerror=null;}">
+            </div>
+            <div class="prod-content">
+              <h4>मयूर मधुबनी पेंटिंग</h4>
+              <span class="card-badge" style="margin-bottom: 10px;">12x12 इंच फ्रेम</span>
+              <p class="prod-desc">प्राकृतिक रंग आ बाँसक कूँची सँ बनाओल पारंपरिक मयूर चित्र। अहाँक घरक देबालक शोभा बढ़ाबय लेल।</p>
+              <div class="qty-control">
+                <button class="btn btn-block btn-sm" onclick="updateCart('p3', 1)">
+                  <i class="fa-solid fa-plus"></i> कार्ट मे जोड़ू
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="card product-card">
+            <div class="prod-img-wrapper">
+              <span class="prod-price-tag">₹399</span>
+              <img data-query="traditional handmade bihar sikki grass basket craft work" alt="सिक्की घासक डलिया (Sikki Basket)" loading="lazy" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text=Image';}else{this.onerror=null;}">
+            </div>
+            <div class="prod-content">
+              <h4>सिक्की घासक डलिया (Sikki Basket)</h4>
+              <span class="card-badge" style="margin-bottom: 10px;">1 पीस</span>
+              <p class="prod-desc">ग्रामीण महिला लोकनि द्वारा हस्तनिर्मित सिक्की घासक सुंदर पारंपरिक टोकरी आ डलिया।</p>
+              <div class="qty-control">
+                <button class="btn btn-block btn-sm" onclick="updateCart('p4', 1)">
+                  <i class="fa-solid fa-plus"></i> कार्ट मे जोड़ू
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Order Summary & Checkout Card -->

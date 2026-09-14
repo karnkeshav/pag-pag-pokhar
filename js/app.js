@@ -155,11 +155,13 @@ document.addEventListener('DOMContentLoaded', () => {
     seedProducts.forEach(prod => {
       const qty = cart[prod.id] || 0;
       const imgSrcAttr = prod.image ? `src="${prod.image}"` : '';
+      const dataQueryAttr = prod.image ? '' : `data-query="${prod.query || ''}"`;
+      const dataEntityAttr = prod.image ? '' : `data-entity="${prod.entity || ''}"`;
       const cardHtml = `
         <div class="card product-card">
           <div class="prod-img-wrapper">
             <span class="prod-price-tag">₹${prod.price}</span>
-            <img ${imgSrcAttr} data-entity="${prod.entity || ''}" data-query="${prod.query || ''}" alt="${prod.name}" loading="lazy"
+            <img ${imgSrcAttr} ${dataEntityAttr} ${dataQueryAttr} alt="${prod.name}" loading="lazy"
                  onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://placehold.co/600x400/111827/ffffff?text='+encodeURIComponent(/^[\x20-\x7E]*$/.test(this.alt||'')?this.alt:'Image');}else{this.onerror=null;}">
           </div>
           <div class="prod-content">
